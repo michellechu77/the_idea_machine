@@ -1,0 +1,8 @@
+<div class="centered">
+  <h2><%=@list.title%></h2>
+    <div id="timer"></div>
+    <div class="idea_machine"></div>
+    <form id="idea_mach_form" action="/user/<%=current_user.id%>/list/<%=@list.id%>" method="post">
+      <input type="submit"></input>
+    </form>
+</div>

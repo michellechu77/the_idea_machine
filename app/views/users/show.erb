@@ -1,0 +1,23 @@
+<div class="centered">
+  <h2><%=@greetings.sample%></h2>
+
+  <%if @completed_today%>
+    <a href="/user/<%=@user.id%>/list/<%=todays_list.id%>/completed">Review Completed Idea Machine</a><br>
+     <a href="/list/<%=todays_list.id%>/all">See Others' Idea Machines</a>
+  <%else%>
+    <a href="/user/<%=@user.id%>/list/<%=todays_list.id%>">Complete Today's Idea Machine</a>
+  <%end%>
+
+  <div class="new_list">
+    <a id="new_list" href="">Submit Idea Machine Topic</a>
+    <p>
+    <form id="new_form" action="/list/new" method="post">
+      <input type="text" name="list_title"></input>
+      <p>
+      <input type="submit"></input>
+      <img src='../ajax-loader.gif'/>
+    </form>
+  </div>
+
+  <a href="/user/<%=current_user.id%>/idea_machine/all">View Past Idea Machines</a>
+</div>

@@ -1,0 +1,9 @@
+<div class="centered">
+  <h2><%=current_user.name%>'s Past Idea Machines</h2>
+
+  <p>Total Idea Machines Completed: <%=current_user.list_count%></p>
+
+  <%@idea_machines.each do |idea_machine| %>
+     <p><a href="/user/<%=current_user.id%>/list/<%=idea_machine.list.id%>/completed"><%=idea_machine.list.title%></a></p>
+  <%end%>
+</div>

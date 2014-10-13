@@ -1,0 +1,11 @@
+<div class="header">
+  <%if current_user%>
+    <a href="/user/<%=current_user.id%>">My Homepage</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="/logout">Logout</a>
+  <%else%>
+    <a href="/">Login</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="/signup">Sign Up</a>
+  <%end%>
+<h1>The Idea Machine</h1>
+   <h5><i>"Exercise your brain to become an Idea Machine"</i></h5>
+</div>

@@ -1,0 +1,12 @@
+<div class="login">
+  <form id="login" action="/" method="post">
+    <h3>Login or Sign Up <a href="/signup">here</a></h3>
+
+    <p><%= @error if @error%><p>
+    <input type="text" name="name" placeholder="Username"></input>
+    <br><br>
+    <input type="password" name = "password"placeholder="Password"></input>
+    <br><br>
+    <input type="submit" value="Login"></input>
+  </form>
+</div>

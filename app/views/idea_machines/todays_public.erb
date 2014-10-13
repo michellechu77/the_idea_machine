@@ -1,0 +1,6 @@
+<div class="centered">
+  <h2>Today's Idea Machines</h2>
+  <%@all_idea_machines.each do |idea_machine|%>
+    <%=erb :'/partials/_idea_machine_and_user', layout: false, locals:{idea_machine: idea_machine}%>
+  <%end%>
+</div>

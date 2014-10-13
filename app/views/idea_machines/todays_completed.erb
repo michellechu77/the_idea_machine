@@ -1,0 +1,12 @@
+<div class="centered">
+  <h2><%=todays_list.title%></h2>
+
+  <%=@error if @error%>
+
+  <%@ideas.each_with_index do |idea_object, index|%>
+      <p><%=index+1%>. <%=idea_object.idea%><p>
+  <%end%>
+
+  <a href="/list/<%=todays_list.id%>/all">Go Back to Idea Machines</a>
+</div>
+

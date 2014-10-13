@@ -1,0 +1,13 @@
+<div class="centered">
+  <form id="signup" action="/signup" method="post">
+    <h3>Sign Up or Already a <a href="/">Idea Machiner?</a></h3>
+    <p><%= @error if @error%><p>
+    <input type="text" name="name" placeholder="Username"></input>
+    <br><br>
+    <input type="password" name = "password"placeholder="Password"></input>
+    <br><br>
+    <input type="password" name = "confirm_password"placeholder="Confirm Password"></input>
+    <br><br>
+    <input type="submit" value="Sign Up"></input>
+  </form>
+<div class="centered">
